@@ -1,0 +1,301 @@
+const sampleListings = [
+    {
+        title: "Cozy Cottage",
+        description: "A beautiful cottage in the countryside.",
+        image: {
+            filename: "listingimage",
+            url:"https://i.pinimg.com/736x/47/2a/dd/472add28786aa328599861a37a1371ab.jpg",
+        },
+        price: 2120,
+        location: "Munnar",
+        country: "India",
+    },
+    {
+        title: "Modern Apartment",
+        description: "A stylish apartment in the city center.",
+        image: {
+            filename: "listingimage",
+            url: "https://i.pinimg.com/736x/3c/ad/92/3cad925df90cbeaa7e728d75eefda0fe.jpg",
+        },
+        price: 2150,
+        location: "Mumbai",
+        country: "India",
+    },
+    {
+        title: "Beach House",
+        description: "A relaxing house by the beach.",
+        image: {
+            filename: "listingimage",
+            url: "https://i.pinimg.com/736x/22/e7/42/22e7426e9fcd95c88d1fab3f3fbbb45d.jpg",
+        },
+        price: 2200,
+        location: "Goa",
+        country: "India",
+    },
+    {
+        title: "Mountain Cabin",
+        description: "A cozy cabin in the mountains.",
+        image: {
+            filename: "listingimage",
+            url: "https://i.pinimg.com/736x/86/69/ac/8669ac4419802700ffbd935b4e6ffb6b.jpg",
+        },
+        price: 2180,
+        location: "Manali",
+        country: "India",
+    },
+    {
+        title: "Luxury Villa",
+        description: "An extravagant villa with a pool.",
+        image:  {
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/1150545984/photo/upscale-modern-mansion-with-pool.jpg?s=2048x2048&w=is&k=20&c=1J3DBH7L-_bHmeXW0itD8Tm9iJQLbYMzjc9PaHYxTrU=",
+        },
+        price: 3500,
+        location: "Udaipur",
+        country: "India",
+    },
+    {
+        title: "Desert Tent",
+        description: "Stay in a traditional Rajasthani desert tent.",
+        image: {
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/1871082238/photo/tent-camp-in-thar-desert-jaisalmer-rajasthan-india.jpg?s=2048x2048&w=is&k=20&c=8V44YWVxF7qOeDeJtK-R-vCugmYowpMcI_6XG1gO6_g=",
+        },
+        price: 2990,
+        location: "Jaisalmer",
+        country: "India",
+    },
+    {
+        title: "Floating Houseboat",
+        description: "Experience Kerala's backwaters on a houseboat.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/916921842/photo/tourists-on-houseboat-in-kerala-india.jpg?s=2048x2048&w=is&k=20&c=9o1WYXam5DO769ScVigQ2oDABXKAuhwhYKTg1ZtSe_M=",
+        }, 
+        price: 2200,
+        location: "Alleppey",
+        country: "India",
+    },
+    {
+        title: "Jungle Treehouse",
+        description: "Live among the treetops in a forest stay.",
+        image:{
+            filename: "listingimage",
+            url: "https://images.unsplash.com/photo-1652602723309-a16309084384?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        }, 
+        price: 1759,
+        location: "Wayanad",
+        country: "India",
+    },
+    {
+        title: "Tea Estate Bungalow",
+        description: "Charming old-world stay in a tea estate.",
+        image:{
+            filename: "listingimage",
+            url: "https://plus.unsplash.com/premium_photo-1724818361335-291394c25925?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        }, 
+        price: 2000,
+        location: "Coonoor",
+        country: "India",
+    },
+    {
+        title: "Lakeside Chalet",
+        description: "Wooden chalet beside a peaceful lake.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/1320326524/photo/lakeside-terrace-with-pc-and-glasses.jpg?s=2048x2048&w=is&k=20&c=5x9NCEC8Gk0MJO3gWdApP9UKfOo6DRExIIcpaYAkeVM=",
+        }, 
+        price: 1900,
+        location: "Nainital",
+        country: "India",
+    },
+    {
+        title: "Forest Cabin",
+        description: "Isolated cabin ideal for writers and thinkers.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/108219206/photo/log-cabin-hidden-in-the-trees-by-the-lake-ohara-in-canada.jpg?s=2048x2048&w=is&k=20&c=DsJKCXqUdIBN92l_Ibk-Cy6TwDSnuVmhHc2gbgxO6ek=",
+        }, 
+        price: 2170,
+        location: "Coorg",
+        country: "India",
+    },
+    {
+        title: "Cliffside Cottage",
+        description: "Cottage with breathtaking sea views.",
+        image:{
+            filename: "listingimage",
+            url: "https://images.unsplash.com/photo-1632803180617-f0dccfb3ba81?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        }, 
+        price: 2210,
+        location: "Varkala",
+        country: "India",
+    },
+    {
+        title: "Urban Loft",
+        description: "Trendy loft with industrial design.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/1138529881/photo/cozy-loft-apartment-interior-in-downtown-los-angeles.jpg?s=2048x2048&w=is&k=20&c=9QYXPZauYcAOt4tJznu29LpRNwlWIFG9y1SUnqM9kC4=",
+        }, 
+        price: 2130,
+        location: "Bangalore",
+        country: "India",
+    },
+    {
+        title: "Royal Haveli",
+        description: "Live like royalty in a heritage haveli.",
+        image:{
+            filename: "listingimage",
+            url: "https://images.unsplash.com/photo-1619684741492-fc1cadb3546b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        }, 
+        price: 3260,
+        location: "Jaipur",
+        country: "India",
+    },
+    {
+        title: "Beachfront Shack",
+        description: "Simple shack right on the beach.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/2197760464/photo/beachfront-tourist-standing-on-colorful-wooden-hut-porch-overlooking-sandy-shoreline-and.jpg?s=2048x2048&w=is&k=20&c=3Wv50Xl2g7TBX9JL9cE2vx5fP4ZVJDmcO728NReodG0=",
+        }, 
+        price: 2100,
+        location: "Gokarna",
+        country: "India",
+    },
+    {
+        title: "Island Hut",
+        description: "Remote island stay for total disconnect.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/157481130/photo/dream-holiday-luxury-resort.jpg?s=2048x2048&w=is&k=20&c=qsVcVkDa8caulwK_sQEjZQzFf0pr_fZfnnvAAqnzQgM=",
+        },
+        price: 3180,
+        location: "Andaman",
+        country: "India",
+    },
+    {
+        title: "Artisan Studio",
+        description: "Creative studio in an artsy neighborhood.",
+        image:{
+            filename: "listingimage",
+            url: "https://images.unsplash.com/photo-1726219837190-58eddbe006e4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        }, 
+        price: 1125,
+        location: "Pondicherry",
+        country: "India",
+    },
+    {
+        title: "Snow View Lodge",
+        description: "Warm lodge with Himalayan snow views.",
+        image:{
+            filename: "listingimage",
+            url: "https://plus.unsplash.com/premium_photo-1670963964797-942df1804579?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        }, 
+        price: 2230,
+        location: "Shimla",
+        country: "India",
+    },
+    {
+        title: "Boutique Apartment",
+        description: "Stylish boutique apartment in metro.",
+        image:{
+            filename: "listingimage",
+            url: "https://images.unsplash.com/photo-1680416124510-5eae1beca412?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        }, 
+        price: 3145,
+        location: "Chennai",
+        country: "India",
+    },
+    {
+        title: "Countryside Mansion",
+        description: "Huge estate with green fields around.",
+        image:{
+            filename: "listingimage",
+            url: "https://images.unsplash.com/photo-1590266830010-7bf5c3339536?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        }, 
+        price: 3300,
+        location: "Nagpur",
+        country: "India",
+    },
+    {
+        title: "Lake View Retreat",
+        description: "Peaceful retreat overlooking a lake.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/1497213335/photo/powai-lake-mumbai-india.jpg?s=2048x2048&w=is&k=20&c=P4B4c1YX8eEXerSMOfDZXWh3zM0Ce20mpgnVC1aWXm4=",
+        }, 
+        price: 3175,
+        location: "Bhopal",
+        country: "India",
+    },
+    {
+        title: "Yoga Ashram Stay",
+        description: "Holistic wellness experience in ashram.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/852575926/photo/young-woman-practicing-yoga-meditation-and-harmony-concept.jpg?s=2048x2048&w=is&k=20&c=ulhVuDvr-fXm2-xrgFfBxYOLGSepVe-U_rVDp_uXS78=",
+        }, 
+        price: 2150,
+        location: "Rishikesh",
+        country: "India",
+    },
+    {
+        title: "Hill Retreat",
+        description: "Cool climate and misty mountain views.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/1051207584/photo/beautiful-golden-hour-and-himalayan-ranges-seen-from-hotel-room.jpg?s=2048x2048&w=is&k=20&c=5JfQwRVF9CO58Z8SEsTh8b6EGYxybp5WgYaBCZA9gds=",
+        }, 
+        price: 3185,
+        location: "Ooty",
+        country: "India",
+    },
+    {
+        title: "Zen Cottage",
+        description: "Minimalist cottage designed for tranquility.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/2207398540/photo/tropical-resort-with-a-frame-cottages-and-palm-trees-in-goa-india.jpg?s=2048x2048&w=is&k=20&c=WctTnkv0FYw3TGWHvvY7HBsnmRtwfaFPieZ29sQZXTs=",
+        }, 
+        price: 3160,
+        location: "Auroville",
+        country: "India",
+    },
+    {
+        title: "Boathouse Retreat",
+        description: "Unique boathouse on a serene lake.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/1298956744/photo/house-boat-pleasure-cruise-ship-in-india-kerala-on-the-seaweed-covered-river-channels-of.jpg?s=2048x2048&w=is&k=20&c=s4GTtWSujgst34hJ9JZMvFUqDwfZnqfwGQJXsspqefE=",
+        }, 
+        price: 3210,
+        location: "Srinagar",
+        country: "India",
+    },
+    {
+        title: "Historic Palace Stay",
+        description: "Stay in a restored historic palace.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/628517884/photo/grand-scale.jpg?s=2048x2048&w=is&k=20&c=VA9yAGLu6D_CCxMDD1gq6MNMZq3JMgbEOaH4z17v-E4=",
+        }, 
+        price: 2450,
+        location: "Mysore",
+        country: "India",
+    },
+    {
+        title: "Eco-Friendly Farmstay",
+        description: "Sustainable living on a working farm.",
+        image:{
+            filename: "listingimage",
+            url: "https://media.istockphoto.com/id/1266344101/photo/digitally-generated-domestic-bedroom-interior.jpg?s=2048x2048&w=is&k=20&c=XYHq9bzjSf11uNXCeOZxPDGq9r-hYkq7OeBVgCTNslo=",
+        },
+        price: 2140,
+        location: "Ahmednagar",
+        country: "India",
+    }
+];
+
+module.exports = { data: sampleListings };
