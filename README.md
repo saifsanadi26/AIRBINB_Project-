@@ -195,6 +195,9 @@ This project is licensed under the ISC License.
 
 **Saif Sanadi**
 
+[![GitHub](https://img.shields.io/badge/GitHub-saifsanadi26-black?logo=github)](https://github.com/saifsanadi26)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-saifsanadi-blue?logo=linkedin)](https://www.linkedin.com/in/saifsanadi)
+
 ## 🙏 Acknowledgments
 
 - Inspired by Airbnb
@@ -203,7 +206,7 @@ This project is licensed under the ISC License.
 
 ## 📞 Support
 
-For support, email your-email@example.com or create an issue in the repository.
+For support, create an issue in the [GitHub repository](https://github.com/saifsanadi26/AIRBINB_Project-) or connect with me on [LinkedIn](https://www.linkedin.com/in/saifsanadi).
 
 ---
 
