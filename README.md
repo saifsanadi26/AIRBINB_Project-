@@ -61,8 +61,8 @@ Before running this project, make sure you have:
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
-   cd AIRBNB_PROJECT-main
+   git clone https://github.com/saifsanadi26/AIRBINB_Project-.git
+   cd AIRBINB_Project-
    ```
 
 2. **Install dependencies**
